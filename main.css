@@ -3,6 +3,7 @@
     --bg-color: #555;
     --white: #f0f0f9;
     --black: #000;
+    --border: #0b0a0a;
 }
 
 * {
@@ -11,6 +12,13 @@
 
 body {
     background-color: var(--bg-color);
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .teclado {
@@ -24,36 +32,37 @@ body {
 
 .white {
     background-color: var(--white);
-    width: 50px;
-    height: 300px;
+    width: 36px;
+    height: 270px;
     border: 1px solid #000;
+    border-bottom: 20px solid var(--border);
 }
 
 .black {
     position: absolute;
     background-color: var(--black);
-    width: 30px;
-    height: 160px;
+    width: 23px;
+    height: 140px;
 }
 
 [CS] {
-    left: 35px;
+    left: 25px;
 }
 
 [DS] {
-    left: 85px;
+    left: 60px;
 }
 
 [FS] {
-    left: 185px;
+    left: 132px;
 }
 
 [GS] {
-    left: 235px;
+    left: 167px;
 }
 
 [AS] {
-    left: 285px;
+    left: 204px;
 }
 
 .playing {
@@ -64,4 +73,18 @@ body {
 
 .key {
     transition: transform 80ms ease;
+}
+
+#top {
+    background-color: var(--border);
+    height: 250px;
+    width: 1296px;
+}
+
+[Lleft] {
+    border-left: 7px solid var(--border);
+}
+
+[Lright] {
+    border-right: 7px solid var(--border);
 }
