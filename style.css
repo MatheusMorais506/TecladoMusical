@@ -1,9 +1,9 @@
 :root {
-    --base-color: #fd951f;
+    --base-color: #4fecec;
     --bg-color: #532d7d;
     --white: #f0f0f9;
     --black: #000;
-    --border: #0b0a0a;
+    --border: #1c1b1b;
 }
 
 * {
@@ -33,9 +33,18 @@ body {
 .white {
     background-color: var(--white);
     width: 34px;
-    height: 240px;
-    border: 1px solid #000;
-    border-bottom: 20px solid var(--border);
+    height: 200px;
+    border: 1px solid var(--border);
+    box-shadow: 0px 9px 0px var(--white), 0px 9px 20px rgba(0, 0, 0, .7);
+    transition: all .1s ease;
+}
+
+.white:active {
+    -webkit-box-shadow: 0px 3px 0px #cecece, 0px 3px 6px rgba(0, 0, 0, .9);
+    -moz-box-shadow: 0px 3px 0px #cecece, 0px 3px 6px rgba(0, 0, 0, .9);
+    box-shadow: 0px 3px 0px #cecece, 0px 3px 6px rgba(0, 0, 0, .9);
+    position: relative;
+    top: 0px;
 }
 
 .black {
@@ -43,6 +52,8 @@ body {
     background-color: var(--black);
     width: 22px;
     height: 120px;
+    border: 5px solid #484848;
+    z-index: 1;
 }
 
 [CS] {
@@ -77,7 +88,7 @@ body {
 
 #top {
     background-color: var(--border);
-    height: 250px;
+    height: 280px;
     width: 1223px;
     display: flex;
     justify-content: space-around;
@@ -85,28 +96,46 @@ body {
 }
 
 [Lleft] {
-    border-left: 7px solid var(--border);
+    border-left: 2px solid var(--border);
 }
 
 [Lright] {
-    border-right: 7px solid var(--border);
+    border-right: 2px solid var(--border);
 }
 
 .Som {
-    height: 230px;
-    width: 290px;
+    height: 155px;
+    width: 250px;
     border-radius: 5px;
-    background-color: #1a1919;
+    display: flex;
 }
 
 #S1 {
-    margin-top: 10px;
+    margin-top: 1rem;
     margin-left: 1px;
+    background-image: url(./Fundo.png);
 }
 
 #S2 {
-    margin-top: 10px;
+    margin-top: 1rem;
     margin-right: 1px;
+    background-image: url(./Fundo.png);
+}
+
+.Som>div {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border: 2px solid #1a1919;
+}
+
+.visorTotal {
+    height: 150px;
+    width: 280px;
+    background-color: rgb(16, 15, 15);
+    margin-left: 11rem;
+    margin-top: 1rem;
+    border-radius: 0.7rem;
 }
 
 #visor {
@@ -114,31 +143,59 @@ body {
     height: 80px;
     width: 120px;
     border-radius: 5px;
-    background-color: #303030;
+    background-color: #484646;
     left: 50%;
-    top: 30%;
+    top: 29%;
     transform: translate(-50%, -40%);
     color: #fff;
     text-align: center;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+#date {
+    margin-top: 1.3rem;
 }
 
 .meio {
     display: flex;
 }
 
-.butoesTop {
+.butoesTopRight {
     position: absolute;
-    display: flex;
-    margin-left: 12rem;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 37rem;
+    margin-top: -8rem;
 }
 
-.butoesTop>button {
-    margin: 0 3px;
-    height: 30px;
-    width: 30px;
+.butoesTopRight>button {
+    margin: 0 6px 8px 0;
+    height: 17px;
+    width: 20px;
+    background-color: #484848;
+    border-radius: 0.2rem;
+}
+
+.butoesTopLeft {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 4rem;
+    margin-top: -7.5rem;
+}
+
+.butoesTopLeft>button {
+    margin: 0 6px 8px 0;
+    height: 11px;
+    width: 16px;
+    background-color: #484848;
+    border-radius: 0.2rem;
+}
+
+.butoesTopLeft>#left {
+    margin-top: 2.5rem;
+    background-color: #fff;
 }
 
 .AreaButtons {
@@ -154,27 +211,55 @@ body {
 .butoesBottomOne {
     display: flex;
     height: 30px;
-    margin-left: 7rem;
-    margin-top: 1rem;
 }
 
 .butoesBottomOne>button {
     margin: 0 3px;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
+    border-radius: 0.3rem;
+    background-color: #484848;
 }
 
 .butoesBottomTwo {
     display: flex;
     height: 30px;
-    margin-left: 12rem;
-    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 .butoesBottomTwo>button {
     margin: 0 3px;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
+    border-radius: 0.3rem;
+    background-color: #484848;
+}
+
+.butoesBottomTree {
+    display: flex;
+    height: 30px;
+    margin-left: 2rem;
+}
+
+.butoesBottomTree>button {
+    margin: 0 3px;
+    height: 22px;
+    width: 22px;
+    border-radius: 0.3rem;
+    background-color: #484848;
+}
+
+.butoesBottomFour {
+    display: flex;
+    height: 30px;
+    margin-left: 3rem;
+}
+
+.butoesBottomFour>button {
+    margin: 0 3px;
+    height: 22px;
+    width: 22px;
+    border-radius: 0.3rem;
 }
 
 .buttonStart {
@@ -182,7 +267,7 @@ body {
     width: 2.5rem;
     border-radius: 2rem;
     position: absolute;
-    margin-top: 0.5rem;
+    margin-top: -3rem;
     background-color: #000;
     border: 7px solid #303030;
 }
@@ -198,18 +283,8 @@ body {
     height: 55px;
 }
 
-.visorTotal {
-    height: 140px;
-}
-
-[Red] {
-    background-color: Red;
-}
-
-[Blue] {
-    background-color: blue;
-}
-
-[Green] {
-    background-color: green;
+#bottom {
+    height: 30px;
+    width: 1223px;
+    background-color: var(--border);
 }

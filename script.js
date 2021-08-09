@@ -6,8 +6,7 @@ function playNote(event) {
     // typed or pressed key
     const key = document.querySelector(`.key[data-key="${audioKeyCode}"]`)
         // if key exists
-    const cantFoundAnyKey = !key
-    if (cantFoundAnyKey) {
+    if (!key) {
         return;
     }
     addPlayingClass(key)
@@ -20,6 +19,7 @@ function addPlayingClass(key) {
 
 function getKeyCode(event) {
     let keyCode;
+
     const isKeyboard = event.type === "keydown"
     if (isKeyboard) {
         keyCode = event.keyCode
