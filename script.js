@@ -60,7 +60,7 @@ function visorNotas(key) {
             notaMusical.innerHTML = 'C'
             console.log('C')
             break;
-        case "C#":
+        case "CS":
             notaMusical.innerHTML = 'C#'
             console.log('C#')
             break;
@@ -68,7 +68,7 @@ function visorNotas(key) {
             notaMusical.innerHTML = 'D'
             console.log('D')
             break;
-        case "D#":
+        case "DS":
             notaMusical.innerHTML = 'D#'
             console.log('D#')
             break;
@@ -80,7 +80,7 @@ function visorNotas(key) {
             notaMusical.innerHTML = 'F'
             console.log('F')
             break;
-        case "F#":
+        case "FS":
             notaMusical.innerHTML = 'F#'
             console.log('F#')
             break;
@@ -88,7 +88,7 @@ function visorNotas(key) {
             notaMusical.innerHTML = 'G'
             console.log('G')
             break;
-        case "G#":
+        case "GS":
             notaMusical.innerHTML = 'G#'
             console.log('G#')
             break;
@@ -96,7 +96,7 @@ function visorNotas(key) {
             notaMusical.innerHTML = 'A'
             console.log('A')
             break;
-        case "A#":
+        case "AS":
             notaMusical.innerHTML = 'A#'
             console.log('A#')
             break;

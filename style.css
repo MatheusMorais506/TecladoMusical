@@ -25,9 +25,25 @@ body {
     display: flex;
 }
 
+#Lleft {
+    position: relative;
+    width: 15px;
+    height: 200px;
+    margin-left: -1rem;
+    background-color: var(--border);
+}
+
 .oitava {
     position: relative;
     display: flex;
+}
+
+#Lright {
+    position: relative;
+    width: 15px;
+    height: 200px;
+    margin-left: 0.1rem;
+    background-color: var(--border);
 }
 
 .white {
@@ -56,23 +72,23 @@ body {
     z-index: 1;
 }
 
-[CS] {
+#CS {
     left: 22px;
 }
 
-[DS] {
+#DS {
     left: 58px;
 }
 
-[FS] {
+#FS {
     left: 125px;
 }
 
-[GS] {
+#GS {
     left: 160px;
 }
 
-[AS] {
+#AS {
     left: 194px;
 }
 
@@ -89,18 +105,11 @@ body {
 #top {
     background-color: var(--border);
     height: 280px;
-    width: 1223px;
+    width: 1255px;
     display: flex;
     justify-content: space-around;
     position: relative;
-}
-
-[Lleft] {
-    border-left: 2px solid var(--border);
-}
-
-[Lright] {
-    border-right: 2px solid var(--border);
+    margin-left: -1rem;
 }
 
 .Som {
@@ -156,16 +165,28 @@ body {
     margin: 0 0 0 0;
 }
 
-#date {
+#IdDate {
     height: 50%;
-    background-color: #4fecec;
     margin-top: 0;
+    background-color: #6a399f;
+}
+
+#date {
+    margin: 0.2rem;
+    text-align: center;
 }
 
 #notaMusical {
     height: 50%;
-    background-color: #532d7d;
+    background-color: #24d0d9;
     margin-bottom: 0;
+}
+
+#NotaMusic {
+    color: #000;
+    font-size: 1.7rem;
+    margin: 0.5rem;
+    font-weight: bold;
 }
 
 .meio {
@@ -296,8 +317,9 @@ body {
 
 #bottom {
     height: 30px;
-    width: 1223px;
+    width: 1255px;
     background-color: var(--border);
+    margin-left: -1rem;
 }
 
 .clickWhite {
