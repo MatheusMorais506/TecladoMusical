@@ -21,7 +21,10 @@
             <div id="completo">
                 <div class="visorTotal">
                     <div id="visor">
-                        <p id="date"></p>
+                        <div id="date"></div>
+                        <div id="notaMusical">
+                            <p id="NotaMusic"></p>
+                        </div>
                     </div>
                 </div>
 
@@ -43,7 +46,7 @@
                             <button id="left"></button>
                         </div>
                         <div class="butoesTopRight">
-                            <button class="key" data-key="96" Tecla0></button>
+                            <button></button>
                             <button></button>
                             <button></button>
                             <button></button>
@@ -95,79 +98,202 @@
 
         <div class="teclado">
             <div class="oitava" o1>
-                <div class="white key" data-key="81" TeclaQ Lleft C></div>
-                <div class="black key" data-key="192" TeclaAspasDuplas CS></div>
-                <div class="white key" data-key="87" TeclaW D></div>
-                <div class="black key" data-key="49" Tecla! DS></div>
-                <div class="white key" data-key="69" TeclaE E></div>
-                <div class="white key" data-key="82" TeclaR F></div>
-                <div class="black key" data-key="50" Tecla@ FS></div>
-                <div class="white key" data-key="84" TeclaT G></div>
-                <div class="black key" data-key="51" Tecla# GS></div>
-                <div class="white key" data-key="89" TeclaY A></div>
-                <div class="black key" data-key="52" Tecla$ AS></div>
-                <div class="white key" data-key="85" TeclaU B></div>
+                <div class="white key" data-key="81" Lleft id="C">
+                    <p class="clickWhite">Q</p>
+                </div>
+                <div class="black key" data-key="192" id="C#" CS>
+                    <p class="clickBlack">"</p>
+                </div>
+                <div class="white key" data-key="87" id="D">
+                    <p class="clickWhite">W</p>
+                </div>
+                <div class="black key" data-key="49" id="D#" DS>
+                    <p class="clickBlack">!</p>
+                </div>
+                <div class="white key" data-key="69" id="E">
+                    <p class="clickWhite">E</p>
+                </div>
+                <div class="white key" data-key="82" id="F">
+                    <p class="clickWhite">R</p>
+                </div>
+                <div class="black key" data-key="50" id="F#" FS>
+                    <p class="clickBlack">@</p>
+                </div>
+                <div class="white key" data-key="84" id="G">
+                    <p class="clickWhite">T</p>
+                </div>
+                <div class="black key" data-key="51" id="G#" GS>
+                    <p class="clickBlack">#</p>
+                </div>
+                <div class="white key" data-key="89" id="A">
+                    <p class="clickWhite">Y</p>
+                </div>
+                <div class="black key" data-key="52" id="A#" AS>
+                    <p class="clickBlack">$</p>
+                </div>
+                <div class="white key" data-key="85" id="B">
+                    <p class="clickWhite">U</p>
+                </div>
             </div>
 
             <div class="oitava" o2>
-                <div class="white key" data-key="73" TeclaI C></div>
-                <div class="black key" data-key="53" Tecla% CS></div>
-                <div class="white key" data-key="79" TeclaO D></div>
-                <div class="black key" data-key="54" Tecla¨ DS></div>
-                <div class="white key" data-key="80" TeclaP E></div>
-                <div class="white key" data-key="219" TeclaAspasSimples F></div>
-                <div class="black key" data-key="55" Tecla& FS></div>
-                <div class="white key" data-key="221" TeclaColcheteAberta G></div>
-                <div class="black key" data-key="56" Tecla* GS></div>
-                <div class="white key" data-key="20" TeclaCapsLock A></div>
-                <div class="black key" data-key="57" Tecla( AS></div>
-                <div class="white key" data-key="65" TeclaA B></div>
+                <div class="white key" data-key="73" id="C" C>
+                    <p class="clickWhite">I</p>
+                </div>
+                <div class="black key" data-key="53" id="C#" CS>
+                    <p class="clickBlack">%</p>
+                </div>
+                <div class="white key" data-key="79" id="D" D>
+                    <p class="clickWhite">O</p>
+                </div>
+                <div class="black key" data-key="54" id="D#" DS>
+                    <p class="clickBlack">¨</p>
+                </div>
+                <div class="white key" data-key="80" id="E" E>
+                    <p class="clickWhite">P</p>
+                </div>
+                <div class="white key" data-key="219" id="F" F>
+                    <p class="clickWhite">`</p>
+                </div>
+                <div class="black key" data-key="55" id="F#" FS>
+                    <p class="clickBlack">&</p>
+                </div>
+                <div class="white key" data-key="221" id="G" G>
+                    <p class="clickWhite">{</p>
+                </div>
+                <div class="black key" data-key="56" id="G#" GS>
+                    <p class="clickBlack">*</p>
+                </div>
+                <div class="white key" data-key="20" id="A" A>
+                    <p class="clickWhite">Caps</p>
+                </div>
+                <div class="black key" data-key="57" id="A#" AS>
+                    <p class="clickBlack">(</p>
+                </div>
+                <div class="white key" data-key="65" id="B" B>
+                    <p class="clickWhite">A</p>
+                </div>
             </div>
 
             <div class="oitava" o3>
-                <div class="white key" data-key="83" TeclaS C></div>
-                <div class="black key" data-key="48" Tecla) CS></div>
-                <div class="white key" data-key="68" TeclaD D></div>
-                <div class="black key" data-key="189" Tecla_ DS></div>
-                <div class="white key" data-key="70" TeclaF E></div>
-                <div class="white key" data-key="71" TeclaG F></div>
-                <div class="black key" data-key="187" TeclaIgual FS></div>
-                <div class="white key" data-key="72" TeclaH G></div>
-                <div class="black key" data-key="8" TeclaVoltar GS></div>
-                <div class="white key" data-key="74" TeclaJ A></div>
-                <div class="black key" data-key="144" TeclaNumLock AS></div>
-                <div class="white key" data-key="75" TeclaK B></div>
+                <div class="white key" data-key="83" id="C" C>
+                    <p class="clickWhite">S</p>
+                </div>
+                <div class="black key" data-key="48" id="C#" CS>
+                    <p class="clickBlack">)</p>
+                </div>
+                <div class="white key" data-key="68" id="D" D>
+                    <p class="clickWhite">D</p>
+                </div>
+                <div class="black key" data-key="189" id="D#" DS>
+                    <p class="clickBlack">_</p>
+                </div>
+                <div class="white key" data-key="70" id="E" E>
+                    <p class="clickWhite">F</p>
+                </div>
+                <div class="white key" data-key="71" id="F" F>
+                    <p class="clickWhite">G</p>
+                </div>
+                <div class="black key" data-key="187" id="F#" FS>
+                    <p class="clickBlack">=</p>
+                </div>
+                <div class="white key" data-key="72" id="G" G>
+                    <p class="clickWhite">H</p>
+                </div>
+                <div class="black key" data-key="8" id="G#" GS>
+                    <p class="clickBlack">
+                        <</p>
+                </div>
+                <div class="white key" data-key="74" id="A" A>
+                    <p class="clickWhite">J</p>
+                </div>
+                <div class="black key" data-key="144" id="A#" AS>
+                    <p class="clickBlack">Num</p>
+                </div>
+                <div class="white key" data-key="75" id="B" B>
+                    <p class="clickWhite">K</p>
+                </div>
             </div>
 
             <div class="oitava" o4>
-                <div class="white key" data-key="76" TeclaL C></div>
-                <div class="black key" data-key="111" Tecla/ CS></div>
-                <div class="white key" data-key="186" TeclaÇ D></div>
-                <div class="black key" data-key="106" Tecla* DS></div>
-                <div class="white key" data-key="222" TecladoChapeu E></div>
-                <div class="white key" data-key="220" TeclaColchetefechado F></div>
-                <div class="black key" data-key="109" Tecla- FS></div>
-                <div class="white key" data-key="0" TeclaShift G></div>
-                <div class="black key" data-key="103" Tecla7 GS></div>
-                <div class="white key" data-key="226" TeclaBarra A></div>
-                <div class="black key" data-key="104" Tecla8 AS></div>
-                <div class="white key" data-key="90" TeclaZ B></div>
+                <div class="white key" data-key="76" id="C" C>
+                    <p class="clickWhite">L</p>
+                </div>
+                <div class="black key" data-key="111" id="C#" CS>
+                    <p class="clickBlack">/</p>
+                </div>
+                <div class="white key" data-key="186" id="D" D>
+                    <p class="clickWhite">Ç</p>
+                </div>
+                <div class="black key" data-key="106" id="D#" DS>
+                    <p class="clickBlack">*</p>
+                </div>
+                <div class="white key" data-key="222" id="E" E>
+                    <p class="clickWhite">^</p>
+                </div>
+                <div class="white key" data-key="220" id="F" F>
+                    <p class="clickWhite">{</p>
+                </div>
+                <div class="black key" data-key="109" id="F#" FS>
+                    <p class="clickBlack">-</p>
+                </div>
+                <div class="white key" data-key="0" id="G" G>
+                    <p class="clickWhite">Shift</p>
+                </div>
+                <div class="black key" data-key="103" id="G#" GS>
+                    <p class="clickBlack">7</p>
+                </div>
+                <div class="white key" data-key="226" id="A" A>
+                    <p class="clickWhite">|</p>
+                </div>
+                <div class="black key" data-key="104" id="A#" AS>
+                    <p class="clickBlack">8</p>
+                </div>
+                <div class="white key" data-key="90" id="B" B>
+                    <p class="clickWhite">Z</p>
+                </div>
             </div>
 
             <div class="oitava" o5>
-                <div class="white key" data-key="88" TeclaX C></div>
-                <div class="black key" data-key="105" Tecla9 CS></div>
-                <div class="white key" data-key="67" TeclaC D></div>
-                <div class="black key" data-key="107" Tecla+ DS></div>
-                <div class="white key" data-key="86" TeclaV E></div>
-                <div class="white key" data-key="66" TeclaB F></div>
-                <div class="black key" data-key="100" Tecla4 FS></div>
-                <div class="white key" data-key="78" TeclaN G></div>
-                <div class="black key" data-key="101" Tecla5 GS></div>
-                <div class="white key" data-key="77" TeclaM A></div>
-                <div class="black key" data-key="102" Tecla6 AS></div>
-                <div class="white key" data-key="188" TeclaVirgula B></div>
-                <div class="white key" data-key="190" TeclaPonto Lright C></div>
+                <div class="white key" data-key="88" id="C" C>
+                    <p class="clickWhite">X</p>
+                </div>
+                <div class="black key" data-key="105" id="C#" CS>
+                    <p class="clickBlack">9</p>
+                </div>
+                <div class="white key" data-key="67" id="D" D>
+                    <p class="clickWhite">C</p>
+                </div>
+                <div class="black key" data-key="107" id="D#" DS>
+                    <p class="clickBlack">+</p>
+                </div>
+                <div class="white key" data-key="86" id="E" E>
+                    <p class="clickWhite">V</p>
+                </div>
+                <div class="white key" data-key="66" id="F" F>
+                    <p class="clickWhite">B</p>
+                </div>
+                <div class="black key" data-key="100" id="F#" FS>
+                    <p class="clickBlack">4</p>
+                </div>
+                <div class="white key" data-key="78" id="G" G>
+                    <p class="clickWhite">N</p>
+                </div>
+                <div class="black key" data-key="101" id="G#" GS>
+                    <p class="clickBlack">5</p>
+                </div>
+                <div class="white key" data-key="77" id="A" A>
+                    <p class="clickWhite">M</p>
+                </div>
+                <div class="black key" data-key="102" id="A#" AS>
+                    <p class="clickBlack">6</p>
+                </div>
+                <div class="white key" data-key="188" id="B" B>
+                    <p class="clickWhite">,</p>
+                </div>
+                <div class="white key" data-key="190" Lright id="C" C>
+                    <p class="clickWhite">.</p>
+                </div>
             </div>
         </div>
 
@@ -241,12 +367,6 @@
         <audio data-key="102" src="./soundsPiano/AS6.mp3"></audio>
         <audio data-key="188" src="./soundsPiano/B6.mp3"></audio>
         <audio data-key="190" src="./soundsPiano/C7.mp3"></audio>
-
-        <audio data-key="96" src="./soundsExtras/170593__timpan__scary-piano.wav "></audio>
-        <audio data-key="110" src="./soundsExtras/440931__xhale303__piano-loop-1.wav"></audio>
-        <audio data-key="97" src="./soundsExtras/460261__ddmyzik__piano-jingle.wav "></audio>
-        <audio data-key="98" src="./soundsExtras/460268__ddmyzik__happy-piano-jingle.wav "></audio>
-        <audio data-key="99" src="./soundsExtras/511749__piotr123__jazz-piano-intro.wav "></audio>
     </section>
 
 </body>
