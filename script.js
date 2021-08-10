@@ -46,8 +46,8 @@ const zeroFill = n => {
 }
 const interval = setInterval(() => {
     const now = new Date();
-    const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
-    document.getElementById('date').innerHTML = dataHora;
+    const dataHora = zeroFill(now.getUTCDate() - 1) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+    document.getElementById('date').innerHTML = dataHora
 }, 1000);
 
 function visorNotas(key) {
