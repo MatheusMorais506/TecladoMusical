@@ -27,7 +27,7 @@ body {
 
 #Lleft {
     position: relative;
-    width: 15px;
+    width: 17px;
     height: 200px;
     margin-left: -1rem;
     background-color: var(--border);
@@ -40,9 +40,9 @@ body {
 
 #Lright {
     position: relative;
-    width: 15px;
+    width: 14px;
     height: 200px;
-    margin-left: 0.1rem;
+    margin-left: 0rem;
     background-color: var(--border);
 }
 
